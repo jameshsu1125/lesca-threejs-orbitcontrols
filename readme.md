@@ -39,12 +39,9 @@ function clickSomethingToChangeAngel() {
 
 # Methods
 
-| method                                         | options |     description     | default |
-| :--------------------------------------------- | :-----: | :-----------------: | ------: |
-| setPolarAngle(angle)                           |  angle  |   set Polar Angle   |         |
-| setAzimuthalAngle(angle)                       |  angle  | set Azimuthal Angle |         |
-| getPolarAngle()                                |         |   get Polar Angle   |         |
-| getAzimuthalAngle()                            |         | get Azimuthal Angle |         |
-| rotateLeft(angle)                              |         |    to left angle    |         |
-| rotateUp(angle)                                |         |     to up angle     |         |
-| pan(deltaX, deltaY, screenWidth, screenHeight) |         |   i am trying...    |         |
+| method                   | options |     description     | default |
+| :----------------------- | :-----: | :-----------------: | ------: |
+| setPolarAngle(angle)     |  angle  |   set Polar Angle   |         |
+| setAzimuthalAngle(angle) |  angle  | set Azimuthal Angle |         |
+| getPolarAngle()          |         |   get Polar Angle   |         |
+| getAzimuthalAngle()      |         | get Azimuthal Angle |         |
