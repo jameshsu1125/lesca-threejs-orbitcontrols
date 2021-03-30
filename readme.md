@@ -3,14 +3,15 @@
 # Installation
 
 ```sh
-$ npm install lesca-threejs-OrbitControls --save
+$ npm install lesca-threejs-orbitcontrols --save
 ```
 
 # Usage
 
 ```javascript
 import * as THREE from 'three';
-import { OrbitControls } from 'lesca-threejs-OrbitControls';
+import { OrbitControls } from 'lesca-threejs-orbitcontrols';
+const Orb = new OrbitControls(THREE);
 
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -18,7 +19,7 @@ document.body.appendChild(renderer.domElement);
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 10000);
-const controls = new OrbitControls(camera, renderer.domElement);
+const controls = new Orb(camera, renderer.domElement);
 
 //controls.update() must be called after any manual changes to the camera's transform
 camera.position.set(0, 20, 100);

@@ -766,7 +766,6 @@ module.exports = function (THREE) {
 		this.update();
 	}
 
-	console.log(THREE.EventDispatcher.prototype);
 	OrbitControls.prototype = Object.create(THREE.EventDispatcher.prototype);
 
 	OrbitControls.prototype.constructor = OrbitControls;
