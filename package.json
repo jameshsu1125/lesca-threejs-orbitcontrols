@@ -1,6 +1,6 @@
 {
 	"name": "lesca-threejs-orbitcontrols",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "add set polar angle and azimuthal angle",
 	"main": "lib/index.js",
 	"scripts": {
