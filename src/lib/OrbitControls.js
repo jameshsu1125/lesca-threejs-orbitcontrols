@@ -508,7 +508,9 @@ module.exports = function (THREE) {
 		}
 
 		function onMouseMove(event) {
-			event.preventDefault();
+			if (event.cancelable) {
+				event.preventDefault();
+			}
 			if (scope.enabled === false) return;
 
 			var element = scope.domElement === document ? scope.domElement.body : scope.domElement;
