@@ -508,9 +508,8 @@ module.exports = function (THREE) {
 		}
 
 		function onMouseMove(event) {
-			if (event.cancelable) {
-				event.preventDefault();
-			}
+			event.preventDefault();
+
 			if (scope.enabled === false) return;
 
 			var element = scope.domElement === document ? scope.domElement.body : scope.domElement;
@@ -658,7 +657,9 @@ module.exports = function (THREE) {
 		}
 
 		function touchmove(event) {
-			event.preventDefault();
+			if (event.cancelable) {
+				event.preventDefault();
+			}
 			event.stopPropagation();
 			if (scope.enabled === false) return;
 
