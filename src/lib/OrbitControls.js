@@ -557,8 +557,8 @@ module.exports = function (THREE) {
 		function onMouseUp(/* event */) {
 			if (scope.enabled === false) return;
 
-			document.removeEventListener('mousemove', onMouseMove, false);
-			document.removeEventListener('mouseup', onMouseUp, false);
+			document.removeEventListener('mousemove', onMouseMove);
+			document.removeEventListener('mouseup', onMouseUp);
 			scope.dispatchEvent(endEvent);
 			state = STATE.NONE;
 		}
@@ -566,7 +566,7 @@ module.exports = function (THREE) {
 		function onMouseWheel(event) {
 			if (scope.enabled === false || scope.enableZoom === false || state !== STATE.NONE) return;
 
-			event.preventDefault();
+			// event?.preventDefault?.();
 			event.stopPropagation();
 
 			var delta = 0;
